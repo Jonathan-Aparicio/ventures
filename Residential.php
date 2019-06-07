@@ -1,7 +1,6 @@
 <?php
-  require_once "Dao.php";
+  require_once "DAO.php";
   $dao = new Dao();
-  // $info = array();
  $type = 0;
  $info =  $dao->getMainHousePhotos($type);
  $size = count($info);
@@ -29,5 +28,6 @@
           $x= $x + 2;
         }
   ?>
+  <div/>
 
   </body>
