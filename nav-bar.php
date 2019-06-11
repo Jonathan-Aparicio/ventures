@@ -18,6 +18,7 @@
       <li><a href="Residential.php">Residential</a></li>
       <li><a href="#">Commercial</a></li>
       <li><a href="#">Industrial</a></li>
+      <li><a href="upload.php">upload</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
