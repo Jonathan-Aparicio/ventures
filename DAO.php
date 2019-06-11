@@ -66,7 +66,7 @@ class Dao {
   // }
 
   public function updateMain($id, $data){
-      $blob = fopen($data, 'rb')
+      $blob = fopen($data, 'rb');
        $conn = $this->getConnection();
        $saveQuery =
              "UPDATE Houses
