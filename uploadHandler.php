@@ -7,7 +7,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
       // $dao->updateMain(0,$_FILES["photo"]["name"]);
 
-    
+
       $target_dir = "uploads/";
       $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
       $uploadOk = 1;
@@ -24,7 +24,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
               $uploadOk = 0;
           }
       }
-      ?>
+
 
 
       header("Location:upload.php");
