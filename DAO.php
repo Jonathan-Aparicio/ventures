@@ -66,15 +66,16 @@ class Dao {
   // }
 
   public function updateMain($id, $data){
+      $blob = fopen($data, 'rb')
        $conn = $this->getConnection();
        $saveQuery =
              "UPDATE Houses
-             set MainPhoto = LOAD_FILE(:data)
+             set MainPhoto = :data
              WHERE
              ID = :type";
              $q = $conn->prepare($saveQuery);
               $q->bindParam(":id", $id);
-              $q->bindParam(":data", $data);
+              $q->bindParam(":data", $blob, PDO::PARAM_LOB);
               $q->execute();
   }
 
