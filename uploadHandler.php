@@ -5,7 +5,28 @@ session_start();
 // Check if the form was submitted
 if($_SERVER["REQUEST_METHOD"] == "POST"){
 
-      $dao->updateMain(0,$_FILES["photo"]["name"]);
+      // $dao->updateMain(0,$_FILES["photo"]["name"]);
+
+      <?php
+      $target_dir = "uploads/";
+      $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+      $uploadOk = 1;
+      $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+      // Check if image file is a actual image or fake image
+      if(isset($_POST["submit"])) {
+          $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
+          if($check !== false) {
+              echo "File is an image - " . $check["mime"] . ".";
+              $dao->updateMain(0,$target_file);
+              $uploadOk = 1;
+          } else {
+              echo "File is not an image.";
+              $uploadOk = 0;
+          }
+      }
+      ?>
+
+
       header("Location:upload.php");
       exit;
     // Check if file was uploaded without errors
