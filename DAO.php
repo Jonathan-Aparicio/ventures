@@ -65,6 +65,19 @@ class Dao {
   //   return $stmt->fetch();
   // }
 
+  public function updateMain($id, $data){
+       $conn = $this->getConnection();
+       $saveQuery =
+             "UPDATE Houses
+             set MainPhoto = LOAD_FILE(:data)
+             WHERE
+             ID = :type";
+             $q = $conn->prepare($saveQuery);
+              $q->bindParam(":id", $id);
+              $q->bindParam(":data", $data);
+              $q->execute();
+  }
+
   public function getMainHousePhotos($type){
     $conn = $this->getConnection();
     $stmt = $conn->prepare("SELECT * FROM Houses WHERE HouseTypeID = :type");
