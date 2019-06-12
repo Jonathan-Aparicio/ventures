@@ -66,7 +66,8 @@ class Dao {
   // }
 
   public function updateMain($id, $data){
-      $blob = fopen('images/'.$data, 'rb');
+      $blob = fopen($data, 'rb');
+      echo"in dao";
       echo $blob;
        $conn = $this->getConnection();
        $saveQuery =
