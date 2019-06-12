@@ -16,7 +16,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
       if(isset($_POST["submit"])) {
           $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
           if($check !== false) {
-              echo "File is an image - " . $check["mime"] . ".";
+              //echo "File is an image - " . $check["mime"] . ".";
+              echo "is image\n";
               $dao->updateMain(0,$target_file);
               $uploadOk = 1;
           } else {
