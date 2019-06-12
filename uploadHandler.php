@@ -18,7 +18,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
           if($check !== false) {
               //echo "File is an image - " . $check["mime"] . ".";
               echo "is image\n";
-              $dao->updateMain(0,$target_file);
+              $dao->updateMain(0,$_FILES["fileToUpload"]["name"]);
               $uploadOk = 1;
           } else {
               echo "File is not an image.";
