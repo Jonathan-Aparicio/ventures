@@ -8,7 +8,7 @@
     <form action="uploadHandler.php" method="post" enctype="multipart/form-data" >
        <h2>Upload File</h2>
        <label for="fileSelect">Filename:</label>
-       <input type="file" name="fileToUpload" id="fileSelect">
+       <input type="image" name="fileToUpload" id="fileSelect">
        <input type="submit" name="submit" value="Upload">
      </form>
   </div>
