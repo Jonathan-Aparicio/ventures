@@ -67,6 +67,7 @@ class Dao {
 
   public function updateMain($id, $data){
       $blob = fopen('images/'.$data, 'rb');
+      echo $blob;
        $conn = $this->getConnection();
        $saveQuery =
              "UPDATE Houses
