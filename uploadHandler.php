@@ -27,8 +27,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 
 
-      header("Location:upload.php");
-      exit;
+      //header("Location:upload.php");
+      //exit;
     // Check if file was uploaded without errors
     // if(isset($_FILES["photo"]) && $_FILES["photo"]["error"] == 0){
     //     $allowed = array("jpg" => "image/jpg", "jpeg" => "image/jpeg", "gif" => "image/gif", "png" => "image/png");

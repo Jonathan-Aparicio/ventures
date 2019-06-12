@@ -77,6 +77,7 @@ class Dao {
               $q->bindParam(":id", $id);
               $q->bindParam(":data", $blob, PDO::PARAM_LOB);
               $q->execute();
+        fclose($blob);
   }
 
   public function getMainHousePhotos($type){
