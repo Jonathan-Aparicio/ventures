@@ -21,7 +21,7 @@
                 </div>
                 <div class=\"col-sm-4\">
                   <img class=\"img-responsive\" src=\"" . $info[$x+1]['MainPhoto'] . "\">
-                  <h3><p class=\"text-center\">" . $info[$x]['StreetAddress'] . " " . $info[$x+1]['City'] . " " . $info[$x+1]['State'] . "</p></h3>
+                  <h3><p class=\"text-center\">" . $info[$x+1]['StreetAddress'] . " " . $info[$x+1]['City'] . " " . $info[$x+1]['State'] . "</p></h3>
                 </div>
                 <div class=\"col-sm-4\">
                   <img class=\"img-responsive\" src=\"" . $info[$x+2]['MainPhoto'] . "\">
