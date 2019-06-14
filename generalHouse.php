@@ -2,6 +2,7 @@
   require_once "DAO.php";
   $dao = new Dao();
   $id = $_GET["id"];
+
   $info =  $dao->getInfo($id);
   $pics = $dao->getPics($id);
   $size = count($pics);
@@ -28,13 +29,13 @@
   <?php for ($x = 0; $x <= $size; $x++) {
             echo " <div class=\"row\">
                 <div class=\"col-sm-4\">
-                  <img class=\"img-responsive\" src=\"" . $info[$x]['image'] . "\">
+                  <img class=\"img-responsive\" src=\"" . $pics[$x]['image'] . "\">
                 </div>
                 <div class=\"col-sm-4\">
-                  <img class=\"img-responsive\" src=\"" . $info[$x+1]['image'] . "\">
+                  <img class=\"img-responsive\" src=\"" . $pics[$x+1]['image'] . "\">
                 </div>
                 <div class=\"col-sm-4\">
-                  <img class=\"img-responsive\" src=\"" . $info[$x+2]['image'] . "\">
+                  <img class=\"img-responsive\" src=\"" . $pics[$x+2]['image'] . "\">
                 </div>";
 
           $x= $x + 2;
