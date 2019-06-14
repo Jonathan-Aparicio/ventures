@@ -65,22 +65,40 @@ class Dao {
   //   return $stmt->fetch();
   // }
 
-  public function updateMain($id, $data){
-      $blob = fopen($data, 'rb');
-      echo"in dao";
-      echo $blob;
-       $conn = $this->getConnection();
-       $saveQuery =
-             "UPDATE Houses
-             set MainPhoto = :data
-             WHERE
-             ID = :type";
-             $q = $conn->prepare($saveQuery);
-              $q->bindParam(":id", $id);
-              $q->bindParam(":data", $blob, PDO::PARAM_LOB);
-              $q->execute();
-        fclose($blob);
+  public function getInfo($id){
+    $conn = $this->getConnection();
+    $stmt = $conn->prepare("SELECT * FROM Houses WHERE ID = :id");
+    $stmt->bindParam(":id", $id);
+    $stmt->setFetchMode(PDO::FETCH_ASSOC);
+    $stmt->execute();
+    return $stmt->fetchALL();
   }
+
+  public function getPics($id){
+    $conn = $this->getConnection();
+    $stmt = $conn->prepare("SELECT Images.image FROM Images JOIN Houses ON Images.ID = Houses.PhotoID WHERE Houses.ID = 1; :id");
+    $stmt->bindParam(":id", $id);
+    $stmt->setFetchMode(PDO::FETCH_ASSOC);
+    $stmt->execute();
+    return $stmt->fetchALL();
+  }
+
+  // public function updateMain($id, $data){
+  //     $blob = fopen($data, 'rb');
+  //     echo"in dao";
+  //     echo $blob;
+  //      $conn = $this->getConnection();
+  //      $saveQuery =
+  //            "UPDATE Houses
+  //            set MainPhoto = :data
+  //            WHERE
+  //            ID = :type";
+  //            $q = $conn->prepare($saveQuery);
+  //             $q->bindParam(":id", $id);
+  //             $q->bindParam(":data", $blob, PDO::PARAM_LOB);
+  //             $q->execute();
+  //       fclose($blob);
+  // }
 
   public function getMainHousePhotos($type){
     $conn = $this->getConnection();
