@@ -76,7 +76,7 @@ class Dao {
 
   public function getPics($id){
     $conn = $this->getConnection();
-    $stmt = $conn->prepare("SELECT Images.image FROM Images JOIN Houses ON Images.ID = Houses.PhotoID WHERE Houses.ID = 1; :id");
+    $stmt = $conn->prepare("SELECT Images.image FROM Images JOIN Houses ON Images.ID = Houses.PhotoID WHERE Houses.ID = :id");
     $stmt->bindParam(":id", $id);
     $stmt->setFetchMode(PDO::FETCH_ASSOC);
     $stmt->execute();

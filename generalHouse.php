@@ -16,7 +16,7 @@
 <div class="container">
   <div class="row">
     <div class="col-3"></div>
-    <div class="col-6"><img class="img-responsive" src="<?php echo $info[$x]['MainPhoto'] ?>"></div>
+    <div class="col-6"><img class="img-responsive" src="<?php echo $info[$x]['MainPhoto'];?>"></div>
     <div class="col-3"></div>
   </div>
 
