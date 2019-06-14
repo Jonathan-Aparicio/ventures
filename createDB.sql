@@ -8,13 +8,13 @@ CREATE TABLE Houses (
     StreetAddress NVARCHAR(50) NULL,
     City NVARCHAR(30) NULL,
     State NVARCHAR(50) NULL,
-    MainPhoto Blob,
-    HouseTypeID INT NOT NULL,
+    MainPhoto nvarchar(100),
+    HouseTypeID nvarchar(3) NOT NULL,
     PhotoID INT NOT NULL,
     PRIMARY KEY (ID)
 );
 
 create table Images (
 	ID int not null,
-    image blob
+    image nvarchar(100)
     );

@@ -28,7 +28,6 @@
   <?php for ($x = 0; $x <= $size; $x++) {
             echo " <div class=\"row\">
                 <div class=\"col-sm-4\">
-                  <a href=\"generalHouse.php?&id=\"".$info[$x]['ID']."\" >
                   <img class=\"img-responsive\" src=\"" . $info[$x]['image'] . "\">
                 </div>
                 <div class=\"col-sm-4\">
