@@ -1,7 +1,7 @@
 <?php
   require_once "DAO.php";
   $dao = new Dao();
- $type = res;
+ $type = 'res';
  $info =  $dao->getMainHousePhotos($type);
  $size = count($info);
  echo "$size";
