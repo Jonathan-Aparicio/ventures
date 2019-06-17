@@ -14,10 +14,10 @@
 
 
 <div class="container">
-  <div class="row">
-    <div class="col-3"></div>
-    <div class="col-6"><img class="img-responsive" src="<?php echo $info[0]['MainPhoto'];?>"></div>
-    <div class="col-3"></div>
+  <div class="row justify-content-end">
+    <!-- <div class="col-3"></div> -->
+    <div class="col-sm-6"><img class="img-responsive" src="<?php echo $info[0]['MainPhoto'];?>"></div>
+    <!-- <div class="col-3"></div> -->
   </div>
 
   <div class="row">
