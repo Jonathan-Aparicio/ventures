@@ -4,7 +4,6 @@
  $type = 'res';
  $info =  $dao->getMainHousePhotos($type);
  $size = count($info);
- echo "$size";
  ?>
 <body>
 <div>
