@@ -10,17 +10,17 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 </head>
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-dark bg-dark">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">CADAVentures</a>
     </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="index.php">Home</a></li>
-      <li><a href="Residential.php">Residential</a></li>
-      <li><a href="#">Commercial</a></li>
-      <li><a href="#">Industrial</a></li>
-      <li><a href="upload.php">upload</a></li>
+    <ul class="navbar-nav">
+      <li class="nav-item"><a href="index.php">Home</a></li>
+      <li class="nav-item"><a href="Residential.php">Residential</a></li>
+      <li class="nav-item"><a href="#">Commercial</a></li>
+      <li class="nav-item"><a href="#">Industrial</a></li>
+      <li class="nav-item"><a href="upload.php">upload</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
