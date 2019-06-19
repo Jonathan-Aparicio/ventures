@@ -15,9 +15,7 @@
 
 <div class="container">
   <div class="row justify-content-center">
-    <!-- <div class="col-3"></div> -->
     <div class="col-sm-6"><img class="img-fluid" src="<?php echo $info[0]['MainPhoto'];?>"></div>
-    <!-- <div class="col-3"></div> -->
   </div>
 
   <div class="info">
@@ -36,21 +34,37 @@
 
   </div>
 
+  <?php $z = 0;
+    for($x = 0; $x < ceil($size/3); $x++){
+      echo "<div class=\"row\">";
 
-
-  <?php for ($x = 0; $x <= $size; $x++) {
-            echo " <div class=\"row\">
-                <div class=\"col-sm-4\">
-                  <img class=\"img-fluid\" src=\"" . $pics[$x]['image'] . "\">
-                </div>
-                <div class=\"col-sm-4\">
-                  <img class=\"img-fluid\" src=\"" . $pics[$x+1]['image'] . "\">
-                </div>
-                <div class=\"col-sm-4\">
-                  <img class=\"img-fluid\" src=\"" . $pics[$x+2]['image'] . "\">
-                </div>";
-
-          $x= $x + 2;
+        for($y = 0; $y < 3; $y++){
+          if(empty($pics[$z])){
+            break;
+          }else{
+            echo "<div class=\"col-sm-4\">
+              <img class=\"img-fluid\" src=\"" . $pics[$z]['image'] . "\">
+            </div>";
+            $z++;
+          }
         }
+      echo "</div>";
+
+    }
   ?>
+
+            <!-- // echo " <div class=\"row\">
+            //     <div class=\"col-sm-4\">
+            //       <img class=\"img-fluid\" src=\"" . $pics[$x]['image'] . "\">
+            //     </div>
+            //     <div class=\"col-sm-4\">
+            //       <img class=\"img-fluid\" src=\"" . $pics[$x+1]['image'] . "\">
+            //     </div>
+            //     <div class=\"col-sm-4\">
+            //       <img class=\"img-fluid\" src=\"" . $pics[$x+2]['image'] . "\">
+            //     </div>";
+
+        //   $x= $x + 2;
+        // } -->
+
   <div/>
