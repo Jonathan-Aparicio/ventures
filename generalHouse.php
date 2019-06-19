@@ -23,13 +23,14 @@
   <div class="info">
     <div class="row justify-content-center">
       <div class="col-sm-4">
-        <?php echo "<p class=\"text-center\">" . $info[$x]['StreetAddress'] . " " . $info[$x]['City'] . " " . $info[$x]['State'] . "</p>"?>
+        <?php echo "<p class=\"text-center\">" . $info[0]['StreetAddress'] . " " . $info[$x]['City'] . " " . $info[$x]['State'] . "</p>"?>
       </div>
     </div>
 
     <div class="row justify-content-center">
       <div class="col-sm-4">
-        <?php echo "<p class=\"text-center\">" . $info[0]['Description'] . "</p>"?>
+        <p class="text-center"><?php echo $info[0]['Description'] ?></p>
+
       </div>
     </div>
 
