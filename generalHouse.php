@@ -20,7 +20,18 @@
     <!-- <div class="col-3"></div> -->
   </div>
 
-  <div class="row">
+  <div class="info">
+    <div class="row justify-content-center">
+      <div class="col-sm-4">
+        <?php echo "<p class=\"text-center\">" . $info[$x]['StreetAddress'] . " " . $info[$x]['City'] . " " . $info[$x]['State'] . "</p>"?>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-sm-4">
+        <?php echo "<p class=\"text-center\">" . $info[0]['Description'] . "</p>"?>
+      </div>
+    </div>
 
   </div>
 
