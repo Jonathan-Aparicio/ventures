@@ -18,7 +18,7 @@
       echo "<div class=\"row\">";
 
         for($y = 0; $y < 3; $y++){
-          if(empty($pics[$z])){
+          if(empty($info[$z])){
             break;
           }else{
             echo "<div class=\"col-sm-4\">
