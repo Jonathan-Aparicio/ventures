@@ -21,11 +21,23 @@
           if(empty($info[$z])){
             break;
           }else{
+
             echo "<div class=\"col-sm-4\">
-              <a href=\"generalHouse.php?id=".$info[$z]['ID']."\" >
-              <img class=\"img-fluid\" src=\"" . $info[$z]['MainPhoto'] . "\">
-              <h3><p class=\"text-center\">" . $info[$z]['StreetAddress'] . " " . $info[$z]['City'] . " " . $info[$z]['State'] . "</p></h3></a>
-            </div>";
+                    <div class=\"card\">
+                      <img class=\"card-img-top\" src=\"" . $info[$z]['MainPhoto'] ."\" alt=\"Card image\" >
+                      <div class=\"card-body\">
+                      <h4 class=\"card-title\">John Doe</h4>
+                      <p class=\"card-text\">" . $info[$z]['StreetAddress'] . " " . $info[$z]['City'] . " " . $info[$z]['State'] . "</p>
+                      <a href=\"generalHouse.php?id=".$info[$z]['ID']."\" class=\"stretched-link\"></a>
+                      </div>
+                    </div>
+                  </div>"
+
+            // echo "<div class=\"col-sm-4\">
+            //   <a href=\"generalHouse.php?id=".$info[$z]['ID']."\" >
+            //   <img class=\"img-fluid\" src=\"" . $info[$z]['MainPhoto'] . "\">
+            //   <h3><p class=\"text-center\">" . $info[$z]['StreetAddress'] . " " . $info[$z]['City'] . " " . $info[$z]['State'] . "</p></h3></a>
+            // </div>";
             $z++;
           }
         }
