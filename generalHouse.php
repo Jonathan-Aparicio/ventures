@@ -53,7 +53,9 @@
     }
   ?>
 
-            <!-- // echo " <div class=\"row\">
+  <?php
+  // for ($x = 0; $x <= $size; $x++) {
+            // echo " <div class=\"row\">
             //     <div class=\"col-sm-4\">
             //       <img class=\"img-fluid\" src=\"" . $pics[$x]['image'] . "\">
             //     </div>
@@ -65,6 +67,6 @@
             //     </div>";
 
         //   $x= $x + 2;
-        // } -->
-
+        // }
+   ?>
   <div/>
