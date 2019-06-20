@@ -16,13 +16,13 @@
       <a class="nav-link" href="index.php">Home</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="Residential.php">Residential</a>
+      <a class="nav-link" href="generalType.php?type=res">Residential</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Comercial</a>
+      <a class="nav-link" href="generalType.php?type=com">Comercial</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Industrial</a>
+      <a class="nav-link" href="generalType.php?type=ind">Industrial</a>
     </li>
   </ul>
 </nav>
