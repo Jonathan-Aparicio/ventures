@@ -31,7 +31,7 @@
                       <a href=\"generalHouse.php?id=".$info[$z]['ID']."\" class=\"stretched-link\"></a>
                       </div>
                     </div>
-                  </div>"
+                  </div>";
 
             // echo "<div class=\"col-sm-4\">
             //   <a href=\"generalHouse.php?id=".$info[$z]['ID']."\" >
