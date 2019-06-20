@@ -12,7 +12,7 @@
   <?php require_once "nav-bar.php";?>
 </div>
 
-
+<div class="content">
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-sm-6"><img class="img-fluid" src="<?php echo $info[0]['MainPhoto'];?>"></div>
@@ -53,20 +53,5 @@
     }
   ?>
 
-  <?php
-  // for ($x = 0; $x <= $size; $x++) {
-            // echo " <div class=\"row\">
-            //     <div class=\"col-sm-4\">
-            //       <img class=\"img-fluid\" src=\"" . $pics[$x]['image'] . "\">
-            //     </div>
-            //     <div class=\"col-sm-4\">
-            //       <img class=\"img-fluid\" src=\"" . $pics[$x+1]['image'] . "\">
-            //     </div>
-            //     <div class=\"col-sm-4\">
-            //       <img class=\"img-fluid\" src=\"" . $pics[$x+2]['image'] . "\">
-            //     </div>";
-
-        //   $x= $x + 2;
-        // }
-   ?>
-  <div/>
+</div>
+</div>

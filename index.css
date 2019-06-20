@@ -5,3 +5,7 @@ body{
 .info{
   font-family: 'Roboto', sans-serif;
 }
+
+.content{
+  margin-top: 30px;
+}
