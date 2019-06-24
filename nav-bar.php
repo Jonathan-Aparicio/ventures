@@ -24,5 +24,14 @@
     <li class="nav-item">
       <a class="nav-link" href="generalType.php?type=ind">Industrial</a>
     </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Dropdown link
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="Maintenance.php">Maintenance</a>
+        <a class="dropdown-item" href="#">Pay Online</a>
+      </div>
+    </li>
   </ul>
 </nav>
