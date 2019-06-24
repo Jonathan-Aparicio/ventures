@@ -42,7 +42,7 @@
           if(empty($pics[$z])){
             break;
           }else{
-            echo "<div class=\"col-sm-4\">
+            echo "<div class=\"col-sm-4\" style=\"background-color=#e8ebed\">
               <img class=\"img-fluid\" src=\"" . $pics[$z]['image'] . "\">
             </div>";
             $z++;
