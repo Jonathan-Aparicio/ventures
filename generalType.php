@@ -10,13 +10,13 @@
   <?php require_once "nav-bar.php";?>
 </div>
 
-<div class="content">
+<!-- <div class="content"> -->
 <div class="container">
 
   <?php $z = 0;
     for($x = 0; $x < ceil($size/3); $x++){
 
-      echo "<div class=\"info\"><div class=\"row justify-content-center\">";
+      echo "<div class=\"content\"><div class=\"row justify-content-center\">";
 
 
         for($y = 0; $y < 3; $y++){
@@ -48,5 +48,5 @@
     }
   ?>
 </div>
-</div>
+<!-- </div> -->
   </body>
