@@ -14,7 +14,7 @@
 <div class="container">
 
   <?php $z = 0;
-    for($x = 0; $x < ceil($size/3); $x++)
+    for($x = 0; $x < ceil($size/3); $x++){
 
       echo "<div class=\"row justify-content-center\"><div class=\"info\">";
 
