@@ -23,7 +23,6 @@
     $status = false;
     $messages[] = "ENTER A PASSWORD";
   }else if(!preg_match('/([A-Z]|[0-9]|[a-z]){4,8}/',$password)){
-    echo "Bad pasword";
     $messages[] = "ENTER A PASSWORD THAT IS 4-8 CHARACTERS LONG THAT CONTAINS ONLY UPPER AND
     LOWER CASE CHARACTERS AND DIGGITS 0-9";
     $status = false;

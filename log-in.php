@@ -21,4 +21,13 @@
     <a href="register.php">Register</a>
     </form>
   </div>
+  <div class="alert alert-warning">
+    <?php if(isset($_SESSION['message'])):
+      foreach(@$_SESSION['message'] as $message){
+        echo "<div class=\"alert alert-warning\"> . $message . </div>";
+      }
+      endif;
+      unset($_SESSION['message']);
+    ?>
+    </div>
 </body>
