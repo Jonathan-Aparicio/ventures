@@ -11,59 +11,59 @@ class Dao {
       new PDO("mysql:host={$this->host};dbname={$this->db}", $this->user,
           $this->pass);
   }
-  // public function addUser($username, $password){
-  //    $conn = $this->getConnection();
-  //    $saveQuery =
-  //          "INSERT INTO user
-  //          (Email, Password)
-  //          VALUES
-  //          (:name, :password)";
-  //          $q = $conn->prepare($saveQuery);
-  //           $q->bindParam(":name", $username);
-  //           $q->bindParam(":password", $password);
-  //           $q->execute();
-  // }
-  // public function checkExists($username){
-  //   $conn = $this->getConnection();
-  //   $query = "select * from user where Email = :email";
-  //   $q = $conn->prepare($query);
-  //   $q->bindParam(":email",$username);
-  //   $q->execute();
-  //   if($q->fetch()){
-  //     return true;
-  //   }else{
-  //     return false;
-  //   }
-  // }
-  // public function checkLog($username, $password){
-  //   $conn = $this->getConnection();
-  //   $query = "select * from user where Email = :email && Password = :pass";
-  //   $q = $conn->prepare($query);
-  //   $q->bindParam(":email",$username);
-  //   $q->bindParam(":pass",$password);
-  //   $q->execute();
-  //   if($q->fetch()){
-  //     return true;
-  //   }else{
-  //     return false;
-  //   }
-  // }
-  // public function getUser($username)
-	// {
-	// 	$conn = $this->getConnection();
-	// 	$stmt = $conn->prepare("SELECT * FROM user WHERE Email = :uname");
-	// 	$stmt->bindParam(":uname", $username);
-	// 	$stmt->execute();
-	// 	return $stmt->fetch();
-	// }
-  // public function getPass($username)
-  // {
-  //   $conn = $this->getConnection();
-  //   $stmt = $conn->prepare("SELECT Password FROM user WHERE Email = :uname");
-  //   $stmt->bindParam(":uname", $username);
-  //   $stmt->execute();
-  //   return $stmt->fetch();
-  // }
+  public function addUser($username, $password){
+     $conn = $this->getConnection();
+     $saveQuery =
+           "INSERT INTO user
+           (Email, Password)
+           VALUES
+           (:name, :password)";
+           $q = $conn->prepare($saveQuery);
+            $q->bindParam(":name", $username);
+            $q->bindParam(":password", $password);
+            $q->execute();
+  }
+  public function checkExists($username){
+    $conn = $this->getConnection();
+    $query = "select * from user where Email = :email";
+    $q = $conn->prepare($query);
+    $q->bindParam(":email",$username);
+    $q->execute();
+    if($q->fetch()){
+      return true;
+    }else{
+      return false;
+    }
+  }
+  public function checkLog($username, $password){
+    $conn = $this->getConnection();
+    $query = "select * from user where Email = :email && Password = :pass";
+    $q = $conn->prepare($query);
+    $q->bindParam(":email",$username);
+    $q->bindParam(":pass",$password);
+    $q->execute();
+    if($q->fetch()){
+      return true;
+    }else{
+      return false;
+    }
+  }
+  public function getUser($username)
+	{
+		$conn = $this->getConnection();
+		$stmt = $conn->prepare("SELECT * FROM user WHERE Email = :uname");
+		$stmt->bindParam(":uname", $username);
+		$stmt->execute();
+		return $stmt->fetch();
+	}
+  public function getPass($username)
+  {
+    $conn = $this->getConnection();
+    $stmt = $conn->prepare("SELECT Password FROM user WHERE Email = :uname");
+    $stmt->bindParam(":uname", $username);
+    $stmt->execute();
+    return $stmt->fetch();
+  }
 
   public function getInfo($id){
     $conn = $this->getConnection();
