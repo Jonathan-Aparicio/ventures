@@ -20,7 +20,8 @@
     <label for="inputPassword" class="sr-only">Confrim Password</label>
     <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="c-password" required>
     <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-    </form>
     <a href="log-in.php">Log In</a>
+    </form>
+    
   </div>
 </body>

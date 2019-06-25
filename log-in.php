@@ -16,18 +16,18 @@
     <label for="inputEmail" class="sr-only">Email address</label>
     <input type="email" name="username" id="inputEmail" class="form-control" placeholder="Email address" value="<?php echo @$_SESSION['email'];?>" required autofocus>
     <label for="inputPassword" class="sr-only">Password</label>
-    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+    <input type="password" id="inputPassword" class="form-control" placeholder="password" required>
     <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
     <a href="register.php">Register</a>
     </form>
+    <div>
+      <?php if(isset($_SESSION['message'])):
+        foreach(@$_SESSION['message'] as $message){
+          echo "<div class=\"alert alert-warning\"> . $message . </div>";
+        }
+        endif;
+        unset($_SESSION['message']);
+      ?>
+      </div>
   </div>
-  <div class="alert alert-warning">
-    <?php if(isset($_SESSION['message'])):
-      foreach(@$_SESSION['message'] as $message){
-        echo "<div class=\"alert alert-warning\"> . $message . </div>";
-      }
-      endif;
-      unset($_SESSION['message']);
-    ?>
-    </div>
 </body>
