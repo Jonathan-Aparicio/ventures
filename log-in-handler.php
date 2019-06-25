@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once "Dao.php";
+require_once "DAO.php";
 $dao = new Dao();
 
 $username = $_POST['username'];
