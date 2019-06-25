@@ -30,14 +30,23 @@
         Residents
       </a>
       <div class="dropdown-menu">
-        <a class="dropdown-item" href="Maintenance.php">Maintenance</a>
-        <a class="dropdown-item" href="#">Pay Online</a>
+        <?php if (isset($_SESSION["access_granted"]) && $_SESSION["access_granted"]) :?>
+          <a class="dropdown-item" href="Maintenance.php">Maintenance</a>
+          <a class="dropdown-item" href="#">Pay Online</a>
+        <?php else: ?>
+          <a class="dropdown-item" href="log-in.php">Maintenance</a>
+          <a class="dropdown-item" href="log-in.php">Pay Online</a>
+        <?php endif; ?>
       </div>
     </li>
   </ul>
   <ul class="navbar-nav ml-auto">
     <li class="nav-item">
+      <?php if (isset($_SESSION["access_granted"]) && $_SESSION["access_granted"]) :?>
       <a class="nav-link" href="log-in.php">Log In</a>
+      <?php else: ?>
+      <a class="nav-link" href="log-out.php">Log Out</a>
+      <?php endif; ?>
     </li>
   </ul>
 </nav>
