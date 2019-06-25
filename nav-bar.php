@@ -43,9 +43,9 @@
   <ul class="navbar-nav ml-auto">
     <li class="nav-item">
       <?php if (isset($_SESSION["access_granted"]) && $_SESSION["access_granted"]) :
-      echo "<a class=\"nav-link\" href=\"log-in.php\">Log In</a>";
-      else:
       echo "<a class=\"nav-link\" href=\"log-out.php\">Log Out</a>";
+      else:
+      echo "<a class=\"nav-link\" href=\"log-in.php\">Log In</a>";
       endif; ?>
     </li>
   </ul>
