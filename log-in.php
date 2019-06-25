@@ -5,6 +5,9 @@
     header("Location:index.php");
   }
 ?>
+<head>
+    <link rel="stylesheet" type="text/css" href="log-in.css">
+</head>
 
 <body class="text-center">
   <form class="form-signin">
