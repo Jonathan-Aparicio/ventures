@@ -1,6 +1,7 @@
 
 <?php session_start(); ?>
 <head>
+  <title>CADAVenturs - Rentals</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -26,12 +27,17 @@
     </li>
     <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-        Dropdown link
+        Residents
       </a>
       <div class="dropdown-menu">
         <a class="dropdown-item" href="Maintenance.php">Maintenance</a>
         <a class="dropdown-item" href="#">Pay Online</a>
       </div>
+    </li>
+  </ul>
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="log-in.php">Log In</a>
     </li>
   </ul>
 </nav>
