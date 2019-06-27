@@ -21,7 +21,15 @@
     <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="c-password" required>
     <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
     <a href="log-in.php">Log In</a>
+    <?php if(isset($_SESSION['message'])):
+            foreach(@$_SESSION['message'] as $message){
+              echo "<div class=\"alert alert-warning\"> . $message . </div>";
+            }else: echo "<div class=\"alert-info\">password must be 4-8 characters that only contain upper and
+            lower case characters and diggits 0-9</div>";
+            endif;
+            unset($_SESSION['message']);
+    ?>
     </form>
-    
+
   </div>
 </body>
