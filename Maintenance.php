@@ -8,12 +8,12 @@
   </div>
 
   <div class="container">
-    <div class="row align-items-center justify-content-center">
-      <div class="col-sm-6">
+    <div class="row align-items-center justify-content-center" style="height:100%">
+      <div class="col-sm-8">
         <form>
-          <div class="form-group">
-            <label for="emal">Email address</label>
-            <div class="col-sm-5">
+          <div class="form-group row">
+            <label for="emal" class="col-sm-2 col-form-label">Email address</label>
+            <div class="col-sm-10">
             <input type="emal" readonly class="form-control-plaintext" id="staticEmail" value="<?php echo @$_SESSION['email'];?>">
             </div>
             <!-- <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"> -->
