@@ -13,7 +13,9 @@
         <form>
           <div class="form-group">
             <label for="emal">Email address</label>
+            <div>
             <input type="emal" readonly class="form-control-plaintext" id="staticEmail" value="<?php echo @$_SESSION['email'];?>">
+            </div>
             <!-- <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"> -->
           </div>
           <div class="form-group">
