@@ -1,6 +1,10 @@
 <body>
   <div>
-    <?php require_once "nav-bar.php";?>
+    <?php require_once "nav-bar.php";
+    if (isset($_SESSION["access_granted"]) && $_SESSION["access_granted"]) {
+      header("Location:index.php");
+    }
+    ?>
   </div>
 
   <div class="container">
