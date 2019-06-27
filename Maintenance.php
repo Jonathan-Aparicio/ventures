@@ -1,7 +1,7 @@
 <body>
   <div>
     <?php require_once "nav-bar.php";
-    if (isset($_SESSION["access_granted"]) && $_SESSION["access_granted"]) {
+    if (!isset($_SESSION["access_granted"]) && !$_SESSION["access_granted"]) {
       header("Location:index.php");
     }
     ?>
