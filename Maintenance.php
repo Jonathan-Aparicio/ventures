@@ -22,6 +22,7 @@
             <label for="general description">Example textarea</label>
             <textarea class="form-control" id="generalDescription" name="generalDescription" rows="5"></textarea>
           </div>
+          <button type="submit" class="btn btn-primary mb-2">upload</button>
         </form>
       </div>
     </div>
