@@ -14,7 +14,7 @@
           <div class="form-group row">
             <label for="email" class="col-sm-2 col-form-label">Email address</label>
             <div class="col-sm-10">
-            <input type="email" name="email "readonly class="form-control-plaintext" id="staticEmail" value="<?php echo @$_SESSION['email'];?>">
+            <input type="email" name="email" readonly class="form-control-plaintext" id="staticEmail" value="<?php echo @$_SESSION['email'];?>">
             </div>
             <!-- <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"> -->
           </div>
