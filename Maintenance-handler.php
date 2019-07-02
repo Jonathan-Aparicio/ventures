@@ -43,6 +43,7 @@ $mail->addReplyTo('cadaventuresmaintenance@gmail.com', 'First Last');
 $mail->addAddress($email, 'John Doe');
 //Set the subject line
 $mail->Subject = 'PHPMailer GMail SMTP test';
+$mail->Body = $info;
 //Read an HTML message body from an external file, convert referenced images to embedded,
 //convert HTML into a basic plain-text alternative body
 // $mail->msgHTML(file_get_contents('contents.html'), __DIR__);
