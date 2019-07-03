@@ -12,7 +12,7 @@ $pdf = new FPDF();
 $pdf->AddPage();
 $pdf->SetFont('Arial','B',16);
 $pdf->Cell(40,10,$info);
-// $pdf->Output('test.pdf,I');
+$pdf->Output('images/test.pdf,I');
 
 
 //Mail
@@ -50,16 +50,16 @@ $mail->AltBody = $info;
 //Attach an image file
 // $mail->addAttachment('test.pdf');
 //send the message, check for errors
-// if (!$mail->send()) {
-//     echo "Mailer Error: " . $mail->ErrorInfo;
-// } else {
-//     echo "Message sent!";
-//     //Section 2: IMAP
-//     //Uncomment these to save your message in the 'Sent Mail' folder.
-//     #if (save_mail($mail)) {
-//     #    echo "Message saved!";
-//     #}
-// }
+if (!$mail->send()) {
+    echo "Mailer Error: " . $mail->ErrorInfo;
+} else {
+    echo "Message sent!";
+    //Section 2: IMAP
+    //Uncomment these to save your message in the 'Sent Mail' folder.
+    #if (save_mail($mail)) {
+    #    echo "Message saved!";
+    #}
+}
 header("Location: index.php");
 exit;
 ?>
