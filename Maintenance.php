@@ -19,7 +19,11 @@
             <!-- <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"> -->
           </div>
           <div class="form-group">
-            <label for="general description">Example textarea</label>
+            <label for="breif description">breif description</label>
+            <textarea class="form-control" id="generalDescription" name="subjectLine" maxlength="40" placeholder="40 characters long"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="general description">description</label>
             <textarea class="form-control" id="generalDescription" name="generalDescription" rows="5"></textarea>
           </div>
           <button type="submit" class="btn btn-primary mb-2">upload</button>

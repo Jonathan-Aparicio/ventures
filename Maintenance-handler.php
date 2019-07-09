@@ -2,17 +2,20 @@
   session_start();
   $email = $_POST['email'];
   $info = $_POST['generalDescription'];
+  $sub = $_POST['subjectLine']
 //Import PHPMailer classes into the global namespace
 use PHPMailer\PHPMailer\PHPMailer;
 require 'vendor/autoload.php';
 require 'fpdf.php';
+
+$path = 'temp/' . str_replace(' ', '', $sub);
 
 //create pdf
 $pdf = new FPDF();
 $pdf->AddPage();
 $pdf->SetFont('Arial','B',16);
 $pdf->Cell(40,10,$info);
-$pdf->Output('images/test.pdf','F');
+$pdf->Output($path,'F');
 
 
 //Mail
@@ -44,22 +47,19 @@ $mail->addReplyTo('cadaventuresmaintenance@gmail.com', 'First Last');
 //Set who the message is to be sent to
 $mail->addAddress($email, 'John Doe');
 //Set the subject line
-$mail->Subject = 'PHPMailer GMail SMTP test';
+$mail->Subject = 'Maintenance: '. $sub;
 $mail->Body = $info;
 $mail->AltBody = $info;
 //Attach an image file
-$mail->addAttachment('images/test.pdf');
+$mail->addAttachment($path);
 //send the message, check for errors
 if (!$mail->send()) {
     echo "Mailer Error: " . $mail->ErrorInfo;
 } else {
     echo "Message sent!";
-    //Section 2: IMAP
-    //Uncomment these to save your message in the 'Sent Mail' folder.
-    #if (save_mail($mail)) {
-    #    echo "Message saved!";
-    #}
 }
+
+if(unlink($path)) echo "File Deleted";
 header("Location: index.php");
 exit;
 ?>
