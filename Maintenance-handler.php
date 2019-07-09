@@ -12,7 +12,7 @@ $pdf = new FPDF();
 $pdf->AddPage();
 $pdf->SetFont('Arial','B',16);
 $pdf->Cell(40,10,$info);
-$pdf->Output('images/test.pdf,I');
+$pdf->Output('images/test.pdf','I');
 
 
 //Mail
