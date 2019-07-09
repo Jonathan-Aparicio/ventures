@@ -10,7 +10,7 @@ require 'fpdf.php';
 
 // $path = 'temp/' . str_replace(' ', '', $sub). '.pdf';
 // echo $path;
-$path = 'temp/test.pdf';
+$path = 'temp/'. $sub .'.pdf';
 //create pdf
 $pdf = new FPDF();
 $pdf->AddPage();
