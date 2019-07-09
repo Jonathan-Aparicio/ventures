@@ -8,7 +8,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 require 'vendor/autoload.php';
 require 'fpdf.php';
 
-$path = 'temp/' . str_replace(' ', '', $sub);
+$path = 'temp/' . str_replace(' ', '', $sub). '.pdf';
 
 //create pdf
 $pdf = new FPDF();
@@ -17,7 +17,7 @@ $pdf->SetFont('Arial','B',16);
 $pdf->Cell(40,10,$info);
 $pdf->Output($path,'F');
 
-//if(file_exists($path)) echo 'pdf created';
+if(file_exists($path)) echo 'pdf created';
 
 //
 // //Mail
