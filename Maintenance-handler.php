@@ -9,6 +9,7 @@ require 'vendor/autoload.php';
 require 'fpdf.php';
 
 $path = 'temp/' . str_replace(' ', '', $sub);
+echo $path;
 
 // //create pdf
 // $pdf = new FPDF();
