@@ -2,7 +2,7 @@
   session_start();
   $email = $_POST['email'];
   $info = $_POST['generalDescription'];
-  $sub = $_POST['subjectLine']
+  $sub = $_POST['subjectLine'];
 //Import PHPMailer classes into the global namespace
 use PHPMailer\PHPMailer\PHPMailer;
 require 'vendor/autoload.php';
