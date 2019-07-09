@@ -8,8 +8,8 @@ use PHPMailer\PHPMailer\PHPMailer;
 require 'vendor/autoload.php';
 require 'fpdf.php';
 
-$path = 'temp/' . str_replace(' ', '', $sub). '.pdf';
-
+// $path = 'temp/' . str_replace(' ', '', $sub). '.pdf';
+$path = 'images/test.pdf';
 //create pdf
 $pdf = new FPDF();
 $pdf->AddPage();
