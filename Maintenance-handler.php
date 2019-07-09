@@ -48,7 +48,7 @@ $mail->Subject = 'PHPMailer GMail SMTP test';
 $mail->Body = $info;
 $mail->AltBody = $info;
 //Attach an image file
-// $mail->addAttachment('test.pdf');
+$mail->addAttachment('test.pdf');
 //send the message, check for errors
 if (!$mail->send()) {
     echo "Mailer Error: " . $mail->ErrorInfo;
