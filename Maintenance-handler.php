@@ -16,7 +16,7 @@ $pdf = new FPDF();
 $pdf->AddPage();
 $pdf->SetFont('Arial','B',16);
 $pdf->Cell(40,10,$info);
-$pdf->Output($path,'F');
+$pdf->Output("temp/". $sub .".pdf",'F');
 
 // if(file_exists($path)) echo 'pdf created';
 
