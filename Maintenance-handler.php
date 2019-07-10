@@ -14,8 +14,16 @@ $path = str_replace(' ', '', $sub). '.pdf';
 //create pdf
 $pdf = new FPDF();
 $pdf->AddPage();
-$pdf->SetFont('Arial','B',16);
-$pdf->Cell(40,10,$info);
+$pdf->SetFont('Arial','BI',20);
+$pdf->Cell(0,10,"CADAVenturs",1,1,'C');
+$pdf->LN()
+$pdf->LN()
+$pdf->SetFont('Arial',14);
+$pdf->Cell(0,0,$sub);
+$pdf->LN()
+$pdf->Cell(0,0,$info);
+$pdf->LN()
+$pdf->Cell(0,0,date("y-m-d"));
 $pdf->Output($path,'F');
 
 // if(file_exists($path)) echo 'pdf created ' . $path;
@@ -27,11 +35,7 @@ $pdf->Output($path,'F');
 $mail = new PHPMailer;
 //Tell PHPMailer to use SMTP
 $mail->isSMTP();
-//Enable SMTP debugging
-// 0 = off (for production use)
-// 1 = client messages
-// 2 = client and server messages
-// $mail->SMTPDebug = 2;
+
 //Set the hostname of the mail server
 $mail->Host = 'smtp.gmail.com';
 $mail->Port = 587;
@@ -44,16 +48,16 @@ $mail->Username = "cadaventuresmaintenance@gmail.com";
 //Password to use for SMTP authentication
 $mail->Password = "Ideal1234";
 //Set who the message is to be sent from
-$mail->setFrom('maintenance@CADAVentures.com', 'First Last');
+$mail->setFrom('maintenance@CADAVentures.com', 'CADAVenturs');
 //Set an alternative reply-to address
-$mail->addReplyTo('cadaventuresmaintenance@gmail.com', 'First Last');
+$mail->addReplyTo('cadaventuresmaintenance@gmail.com');
 //Set who the message is to be sent to
 $mail->addAddress($email, 'John Doe');
 //Set the subject line
 $mail->Subject = 'Maintenance: '. $sub;
-$mail->Body = $info;
+$mail->Body = "Your maintenance requst has been sent.";
 $mail->AltBody = $info;
-//Attach an image file
+//Attach an pdf file
 $mail->addAttachment($path);
 //send the message, check for errors
 if (!$mail->send()) {
