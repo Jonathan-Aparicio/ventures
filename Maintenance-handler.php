@@ -11,15 +11,15 @@ require 'fpdf.php';
 function title(){
   $this->SetFont('Arial','BI',20);
   $this->Cell(0,10,"CADAVenturs",1,1,'C');
-  $this->LN();
-  $this->LN();
+  $this->Ln();
+  $this->Ln();
 }
 fuction body($i, $s){
   $this->SetFont('Arial',14);
   $this->Cell(0,0,$s);
-  $this->LN();
+  $this->Ln();
   $this->Cell(0,0,$i);
-  $this->LN();
+  $this->Ln();
   $this->Cell(0,0,date("y-m-d"));
 }
 
