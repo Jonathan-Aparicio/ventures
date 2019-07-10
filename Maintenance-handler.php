@@ -22,7 +22,7 @@ $pdf->Ln();
 $pdf->SetFont('Arial','',14);
 $pdf->Cell(0,10,$sub);
 $pdf->Ln();
-$pdf->MultiCell(0,5,$info);
+$pdf->MultiCell(0,7,$info);
 $pdf->Ln();
 $pdf->Cell(0,10,date("y-m-d"));
 $pdf->Output($path,'F');
@@ -53,7 +53,7 @@ $mail->setFrom('maintenance@CADAVentures.com', 'CADAVenturs');
 //Set an alternative reply-to address
 $mail->addReplyTo('cadaventuresmaintenance@gmail.com');
 //Set who the message is to be sent to
-$mail->addAddress($email, 'John Doe');
+$mail->addAddress($email);
 //Set the subject line
 $mail->Subject = 'Maintenance: '. $sub;
 $mail->Body = "Your maintenance requst has been sent.";
