@@ -8,20 +8,20 @@ use PHPMailer\PHPMailer\PHPMailer;
 require 'vendor/autoload.php';
 require 'fpdf.php';
 
-function title(){
-  $this->SetFont('Arial','BI',20);
-  $this->Cell(0,10,"CADAVenturs",1,1,'C');
-  $this->Ln();
-  $this->Ln();
-}
-fuction body($i, $s){
-  $this->SetFont('Arial',14);
-  $this->Cell(0,0,$s);
-  $this->Ln();
-  $this->Cell(0,0,$i);
-  $this->Ln();
-  $this->Cell(0,0,date("y-m-d"));
-}
+// function title(){
+//   $this->SetFont('Arial','BI',20);
+//   $this->Cell(0,10,"CADAVenturs",1,1,'C');
+//   $this->Ln();
+//   $this->Ln();
+// }
+// fuction body($i, $s){
+//   $this->SetFont('Arial',14);
+//   $this->Cell(0,0,$s);
+//   $this->Ln();
+//   $this->Cell(0,0,$i);
+//   $this->Ln();
+//   $this->Cell(0,0,date("y-m-d"));
+// }
 
 $path = str_replace(' ', '', $sub). '.pdf';
 // echo $path;
@@ -29,18 +29,18 @@ $path = str_replace(' ', '', $sub). '.pdf';
 //create pdf
 $pdf = new FPDF();
 $pdf->AddPage();
-// $pdf->SetFont('Arial','BI',20);
-// $pdf->Cell(0,10,"CADAVenturs",1,1,'C');
-// $pdf->Ln();
-// $pdf->Ln();
-// $pdf->SetFont('Arial',14);
-// $pdf->Cell(0,0,$sub);
-// $pdf->Ln();
-// $pdf->Cell(0,0,$info);
-// $pdf->Ln();
-// $pdf->Cell(0,0,date("y-m-d"));
-$pdf->title();
-$pdf->body($info,$sub);
+$pdf->SetFont('Arial','BI',20);
+$pdf->Cell(0,10,"CADAVenturs",1,1,'C');
+$pdf->Ln();
+$pdf->Ln();
+$pdf->SetFont('Arial','',14);
+$pdf->Cell(0,0,$sub);
+$pdf->Ln();
+$pdf->Cell(0,0,$info);
+$pdf->Ln();
+$pdf->Cell(0,0,date("y-m-d"));
+// $pdf->title();
+// $pdf->body($info,$sub);
 $pdf->Output($path,'F');
 
 // if(file_exists($path)) echo 'pdf created ' . $path;
