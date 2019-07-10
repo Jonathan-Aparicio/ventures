@@ -22,7 +22,7 @@ $pdf->Ln();
 $pdf->SetFont('Arial','',14);
 $pdf->Cell(0,10,$sub);
 $pdf->Ln();
-$pdf->MultiCell(0,40,$info);
+$pdf->MultiCell(0,5,$info);
 $pdf->Ln();
 $pdf->Cell(0,10,date("y-m-d"));
 $pdf->Output($path,'F');
