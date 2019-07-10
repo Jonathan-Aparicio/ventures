@@ -10,7 +10,7 @@ require 'fpdf.php';
 
 // $path = 'temp/' . str_replace(' ', '', $sub). '.pdf';
 // echo $path;
-$path = "temp/Maintenance".date("y-m-d") .".pdf";
+$path = "Maintenance".date("y-m-d") .".pdf";
 //create pdf
 $pdf = new FPDF();
 $pdf->AddPage();
