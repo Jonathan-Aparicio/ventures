@@ -47,6 +47,7 @@
       <p class="text-center">You are curently not renting a property. If this is incorect please email cadaventuresmaintenance@gmail.com with the
       email you have signed your lease with and we shall update your acount.</p>
     </div>
+  <?php endif; ?>
   </div>
 
 </body>
