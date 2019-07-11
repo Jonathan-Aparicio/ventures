@@ -83,6 +83,15 @@ class Dao {
     return $stmt->fetchALL();
   }
 
+  public function getAdress($id){
+    $conn = $this->getConnection();
+    $stmt = $conn->prepare("SELECT StreetAddress, City, State FROM Houses WHERE ID = :id");
+    $stmt->bindParam(":id", $id);
+    $stmt->setFetchMode(PDO::FETCH_ASSOC);
+    $stmt->execute();
+    return $stmt->fetchALL();
+  }
+
   // public function updateMain($id, $data){
   //     $blob = fopen($data, 'rb');
   //     echo"in dao";

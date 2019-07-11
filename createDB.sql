@@ -18,3 +18,10 @@ create table Images (
 	ID int not null,
     image nvarchar(100)
     );
+    
+    
+CREATE TABLE User(
+	Email VARCHAR (256) NOT NULL,
+	Password VARCHAR(64) NOT NULL,
+    Renting int null,
+	Access bit NOT NULL DEFAULT 0);

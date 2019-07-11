@@ -35,11 +35,6 @@
                     </div>
                   </div>";
 
-            // echo "<div class=\"col-sm-4\">
-            //   <a href=\"generalHouse.php?id=".$info[$z]['ID']."\" >
-            //   <img class=\"img-fluid\" src=\"" . $info[$z]['MainPhoto'] . "\">
-            //   <h3><p class=\"text-center\">" . $info[$z]['StreetAddress'] . " " . $info[$z]['City'] . " " . $info[$z]['State'] . "</p></h3></a>
-            // </div>";
             $z++;
           }
         }
