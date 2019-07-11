@@ -14,7 +14,7 @@
 
   <div class="container">
     <?php if($user[Renting] != NULL):
-      $address = $dao->getAdress($user[Renting])?>
+      $address = $dao->getInfo($user[Renting])?>
     <div class="row align-items-center justify-content-center" style="height:100%">
       <div class="col-sm-8">
         <form method="POST" action="Maintenance-handler.php">
@@ -27,7 +27,8 @@
           <div class="form-group row">
             <label for="address" class="col-sm-2 col-form-label"> Address</label>
             <div class="col-sm-10">
-            <input  name="address" readonly class="form-control-plaintext"  value="<?php echo $address[0]['StreetAddress'] . " " . $address[0]['City'] . " " . $address[0]['State'];?>">
+            <input  name="address" readonly class="form-control-plaintext"  value="<?php echo $address[0]['StreetAddress'] . " " . $address[0]['City']
+            . " " . $address[0]['State'];?>">
             </div>
           </div>
           <div class="form-group">

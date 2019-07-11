@@ -83,7 +83,7 @@ class Dao {
     return $stmt->fetchALL();
   }
 
-  public function getAdress($id){
+  public function getAddress($id){
     $conn = $this->getConnection();
     $stmt = $conn->prepare("SELECT StreetAddress, City, State FROM Houses WHERE ID = :id");
     $stmt->bindParam(":id", $id);
