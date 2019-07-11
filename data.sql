@@ -56,3 +56,5 @@ insert into Images
 	(ID, image)
     values(4,'images\\res\\mondern\\MH-pool.jpg');
     
+    
+    

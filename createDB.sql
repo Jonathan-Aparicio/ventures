@@ -24,4 +24,6 @@ CREATE TABLE User(
 	Email VARCHAR (256) NOT NULL,
 	Password VARCHAR(64) NOT NULL,
     Renting int null,
-	Access bit NOT NULL DEFAULT 0);
+	Access bit NOT NULL DEFAULT 0,
+     PRIMARY KEY (Email)
+     );

@@ -27,7 +27,7 @@
           <div class="form-group row">
             <label for="address" class="col-sm-2 col-form-label"> Address</label>
             <div class="col-sm-10">
-            <input  name="address" readonly class="form-control-plaintext"  value="<?php echo $address['StreetAddress'] . " " . $address['City'] . " " . $address['State'];?>">
+            <input  name="address" readonly class="form-control-plaintext"  value="<?php echo $address[0]['StreetAddress'] . " " . $address[0]['City'] . " " . $address[0]['State'];?>">
             </div>
           </div>
           <div class="form-group">
