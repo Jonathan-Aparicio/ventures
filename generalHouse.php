@@ -16,9 +16,11 @@
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-sm-6">
-  <div class="row justify-content-center">
-    <div class="col-sm-6"><img class="img-fluid" src="<?php echo $info[0]['MainPhoto'];?>"></div>
-  </div>
+  <!-- <div class="row justify-content-center"> -->
+    <!-- <div class="col-sm-6"> -->
+      <img class="img-fluid" src="<?php echo $info[0]['MainPhoto'];?>">
+    <!-- </div> -->
+  <!-- </div> -->
 </div>
 
 
