@@ -28,7 +28,6 @@
                     <div class=\"card\">
                       <img class=\"card-img-top\" src=\"" . $info[$z]['MainPhoto'] ."\" alt=\"Card image\" >
                       <div class=\"card-body\">
-                      <h4 class=\"card-title\">John Doe</h4>
                       <p class=\"card-text\">" . $info[$z]['StreetAddress'] . " " . $info[$z]['City'] . " " . $info[$z]['State'] . "</p>
                       <a href=\"generalHouse.php?id=".$info[$z]['ID']."\" class=\"stretched-link\"></a>
                       </div>
