@@ -13,8 +13,9 @@
   </div>
 
   <div class="container">
-    <?php if($user[Renting] != NULL):
-      $address = $dao->getInfo((int)$user[Renting]);
+    <?php if($user['Renting'] != NULL):
+
+      $address = $dao->getInfo((int)$user['Renting']);
       if(empty($address) ){
       echo "<div><p>empty</p></div>";
     }else{
@@ -30,7 +31,7 @@
             if(empty($address) ){
             echo "empty";
           }else{
-            echo $user[Renting];
+            echo $user['Renting'];
           }
             ?>">
             </div>
