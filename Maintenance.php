@@ -22,7 +22,12 @@
             <label for="email" class="col-sm-2 col-form-label">Email address</label>
             <div class="col-sm-10">
             <input type="email" name="email" readonly class="form-control-plaintext" id="staticEmail" value="<?php //echo @$_SESSION['email'];
-            echo $user[Renting]?>">
+            if(empty($adaddress) ){
+            echo "empty";
+          }else{
+            echo $user[Renting];
+          }
+            ?>">
             </div>
           </div>
           <div class="form-group row">
