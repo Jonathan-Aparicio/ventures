@@ -14,7 +14,12 @@
 
   <div class="container">
     <?php if($user[Renting] != NULL):
-      $address = $dao->getInfo((int)$user[Renting]);?>
+      $address = $dao->getInfo((int)$user[Renting]);
+      if(empty($adaddress) ){
+      echo "<div><p>empty</p></div>";
+    }else{
+      echo "<div><p>not empty</p></div>";
+    }?>
     <div class="row align-items-center justify-content-center" style="height:100%">
       <div class="col-sm-8">
         <form method="POST" action="Maintenance-handler.php">
