@@ -34,7 +34,7 @@
 
     <div class="row justify-content-center">
       <div class="col-sm-4">
-        <p class="text-center"><?php echo nl2br($info[0]['Description']); ?></p>
+        <p class="text-center"><?php echo $info[0]['Description']; ?></p>
 
       </div>
     </div>
