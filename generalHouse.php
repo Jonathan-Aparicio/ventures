@@ -27,13 +27,13 @@
     <div class="col-sm-6">
   <div class="info">
     <div class="row justify-content-center">
-      <div class="col-sm-4">
+      <div class="col-sm-6">
         <?php echo "<p class=\"text-center\">" . $info[0]['StreetAddress'] . " " . $info[$x]['City'] . " " . $info[$x]['State'] . "</p>"?>
       </div>
     </div>
 
     <div class="row justify-content-center">
-      <div class="col-sm-4">
+      <div class="col-sm-6">
         <p class="text-center"><?php echo $info[0]['Description']; ?></p>
 
       </div>
