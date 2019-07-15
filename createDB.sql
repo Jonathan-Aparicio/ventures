@@ -11,6 +11,7 @@ CREATE TABLE Houses (
     MainPhoto nvarchar(100),
     HouseTypeID nvarchar(3) NOT NULL,
     PhotoID INT NOT NULL,
+    Description MEDIUMTEXT,
     PRIMARY KEY (ID)
 );
 
