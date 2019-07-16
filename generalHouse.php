@@ -42,10 +42,10 @@
   </div>
 
   <?php $z = 0;
-    for($x = 0; $x < ceil($size/3); $x++){
+    for($x = 0; $x < ceil($size/2); $x++){
       echo "<div class=\"content\"><div class=\"row justify-content-center\">";
 
-        for($y = 0; $y < 3; $y++){
+        for($y = 0; $y < 2; $y++){
           if(empty($pics[$z])){
             break;
           }else{
