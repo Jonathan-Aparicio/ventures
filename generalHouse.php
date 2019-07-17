@@ -15,13 +15,13 @@
 <div class="content">
 <div class="container">
   <div class="row align-items-center justify-content-center">
-    <div class="col-sm-6">
+    <div class="col-sm-12">
   <!-- <div class="row justify-content-center"> -->
-    <!-- <div class="col-sm-6"> -->
+    <div class="col-sm-6">
       <img class="img-fluid" src="<?php echo $info[0]['MainPhoto'];?>">
-    <!-- </div> -->
+    </div>
   <!-- </div> -->
-</div>
+<!-- </div> -->
 
 
     <div class="col-sm-6">
@@ -33,13 +33,15 @@
     </div>
 
     <div class="row justify-content-center">
-      <div class="col-sm-6">
+      <div class="col-sm-12">
         <p class="text-center"><?php echo $info[0]['Description']; ?></p>
 
       </div>
     </div>
 
   </div>
+</div>
+</div>
 
   <?php $z = 0;
     for($x = 0; $x < ceil($size/2); $x++){
