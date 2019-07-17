@@ -44,14 +44,14 @@
 </div>
 
   <?php $z = 0;
-    for($x = 0; $x < ceil($size/2); $x++){
+    for($x = 0; $x < ceil($size/3); $x++){
       echo "<div class=\"content\"><div class=\"row justify-content-center\">";
 
-        for($y = 0; $y < 2; $y++){
+        for($y = 0; $y < 3; $y++){
           if(empty($pics[$z])){
             break;
           }else{
-            echo "<div class=\"col-sm-6\">
+            echo "<div class=\"col-sm-4\">
               <img class=\"img-fluid\" src=\"" . $pics[$z]['image'] . "\">
             </div>";
             $z++;
