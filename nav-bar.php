@@ -12,6 +12,10 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="navbar-collapse collapse">
   <ul class="navbar-nav">
     <li class="nav-item">
       <a class="nav-link" href="index.php">Home</a>
@@ -49,4 +53,5 @@
       endif; ?>
     </li>
   </ul>
+</div>
 </nav>
