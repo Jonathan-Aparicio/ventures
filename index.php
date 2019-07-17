@@ -72,7 +72,7 @@
     <div class="col-sm-4">
       <img class="img-responsive" src="blue-house.jpg">
     </div> -->
-    <div>
+
       <?php require_once "footer.php";?>
-    </div>
+
   </body>
