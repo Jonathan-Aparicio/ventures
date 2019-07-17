@@ -7,7 +7,7 @@
   $pics = $dao->getPics($id);
   $size = count($pics);
  ?>
-<body>
+<body class="d-flex flex-column h-100">
 <div>
   <?php require_once "nav-bar.php";?>
 </div>
