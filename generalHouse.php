@@ -79,7 +79,7 @@
     </div>
   </div>
 </footer> -->
-<div>
+
   <?php require_once "footer.php";?>
-</div>
+
 </body>
