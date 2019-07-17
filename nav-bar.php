@@ -16,7 +16,7 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="navbar-collapse collapse">
-  <ul class="navbar-nav">
+  <ul class="navbar-nav" id="navbarCollapse">
     <li class="nav-item">
       <a class="nav-link" href="index.php">Home</a>
     </li>
