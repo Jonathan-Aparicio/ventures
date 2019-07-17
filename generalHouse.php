@@ -65,7 +65,7 @@
 </div>
 </div>
 
-<footer class="footer mt-auto py-3">
+<!-- <footer class="footer mt-auto py-3">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-sm-6">
@@ -78,7 +78,8 @@
       </div>
     </div>
   </div>
-</footer>
-<!-- <div>
-  <?php //require_once "footer.php";?>
-</div> -->
+</footer> -->
+<div>
+  <?php require_once "footer.php";?>
+</div>
+</body>

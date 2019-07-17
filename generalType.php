@@ -5,7 +5,7 @@
  $info =  $dao->getMainHousePhotos($type);
  $size = count($info);
  ?>
-<body>
+<body class="d-flex flex-column h-100">
 <div>
   <?php require_once "nav-bar.php";?>
 </div>
@@ -43,4 +43,7 @@
   ?>
 </div>
 <!-- </div> -->
+<div>
+  <?php require_once "footer.php";?>
+</div>
   </body>

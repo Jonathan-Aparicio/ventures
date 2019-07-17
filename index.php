@@ -2,7 +2,7 @@
 <div>
   <?php require_once "nav-bar.php";?>
 </div>
-<body>
+<body class="d-flex flex-column h-100">
   <div class="container">
     <div class="jumbotron">
   <!-- <h1>Bootstrap Tutorial</h1> -->
@@ -72,4 +72,7 @@
     <div class="col-sm-4">
       <img class="img-responsive" src="blue-house.jpg">
     </div> -->
+    <div>
+      <?php require_once "footer.php";?>
+    </div>
   </body>

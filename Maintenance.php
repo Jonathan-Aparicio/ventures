@@ -1,4 +1,4 @@
-<body>
+<body class="d-flex flex-column h-100">
   <div>
     <?php require_once "nav-bar.php";
     require_once "DAO.php";
@@ -50,4 +50,8 @@
   <?php endif; ?>
   </div>
 
+
+  <div>
+    <?php require_once "footer.php";?>
+  </div>
 </body>
