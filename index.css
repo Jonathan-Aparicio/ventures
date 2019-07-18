@@ -16,6 +16,6 @@ body{
   background-color: #ccd1db;
 }
 
-#extra-img{
+#extra-img:hover{
   opacity: .5;
 }

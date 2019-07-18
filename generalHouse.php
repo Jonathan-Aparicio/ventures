@@ -84,7 +84,8 @@ $('#exampleModal').on('show.bs.modal', function (event) {
   modal.find('.modal-body img').attr("src", source)
 })
 </script>
-
+</div>
+</div>
 
 
 
