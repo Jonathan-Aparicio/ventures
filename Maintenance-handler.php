@@ -24,7 +24,7 @@ $pdf->Cell(0,10,$sub);
 $pdf->Ln();
 $pdf->MultiCell(0,7,$info);
 $pdf->Ln();
-$pdf->Cell(0,10,date("y-m-d"));
+$pdf->Cell(0,10,date("m-d-y"));
 $pdf->Output($path,'F');
 
 // if(file_exists($path)) echo 'pdf created ' . $path;
