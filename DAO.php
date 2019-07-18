@@ -118,6 +118,14 @@ class Dao {
     return $stmt->fetchALL();
   }
 
+  public function getAllMainHousePhotos(){
+    $conn = $this->getConnection();
+    $stmt = $conn->prepare("SELECT MainPhoto FROM Houses");
+    $stmt->setFetchMode(PDO::FETCH_ASSOC);
+    $stmt->execute();
+    return $stmt->fetchALL();
+  }
+
   // public function getAllHouseInfo($id, $type){
   //   $conn = $this->getConnection();
   //   $stmt = $conn->prepare("SELECT * FROM Houses WHERE ID = :id && HouseType = :type");
