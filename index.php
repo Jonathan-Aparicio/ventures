@@ -43,7 +43,7 @@
                           <img src=\"".$pics[$y]."\"  style=\"width:100%; height:50%\">
                         </div>";
               }
-          }
+          
         ?>
 
         <!-- <div class="item active">
