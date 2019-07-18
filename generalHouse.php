@@ -52,7 +52,7 @@
             break;
           }else{
             echo "<div class=\"col-sm-4\">
-              <img class=\"img-fluid\" src=\"" . $pics[$z]['image'] . " \" data-toggle=\"modal\" data-target=\"#exampleModal\">
+              <img class=\"img-fluid\" src=\"" . $pics[$z]['image'] . " \" data-toggle=\"modal\" data-target=\"#exampleModal\" data-whatever=\"" . $pics[$z]['image'] . "\">
             </div>";
             $z++;
           }
@@ -77,6 +77,14 @@
     </div>
   </div>
 </div>
+<script>
+$('#exampleModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget)
+  var source = button.data('whatever')
+  var modal = $(this)
+  modal.find('.modal-body img').attr("src", source)
+})
+</script>
 
 <!-- </div>
 </div>
