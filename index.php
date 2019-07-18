@@ -6,7 +6,7 @@
   <div class="container">
     <div class="jumbotron">
   <!-- <h1>Bootstrap Tutorial</h1> -->
-  <p class="text-center">Welcom to CADAVentures rentals curently this website is a school project. All pictures being used are stock photos
+  <p class="text-center">Welcome to CADAVentures rentals curently this website is a school project. All pictures being used are stock photos
     </p>
 </div>
 
