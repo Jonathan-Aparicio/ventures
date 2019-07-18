@@ -67,6 +67,42 @@ if (!$mail->send()) {
     echo "Message sent!";
 }
 
+//Create a new PHPMailer instance
+$ToCada = new PHPMailer;
+//Tell PHPMailer to use SMTP
+$ToCada->isSMTP();
+
+//Set the hostname of the mail server
+$ToCada->Host = 'smtp.gmail.com';
+$ToCada->Port = 587;
+//Set the encryption system to use - ssl (deprecated) or tls
+$ToCada->SMTPSecure = 'tls';
+//Whether to use SMTP authentication
+$ToCada->SMTPAuth = true;
+//Username to use for SMTP authentication - use full email address for gmail
+$ToCada->Username = "cadaventuresmaintenance@gmail.com";
+//Password to use for SMTP authentication
+$ToCada->Password = "Ideal1234";
+//Set who the message is to be sent from
+$ToCada->setFrom('maintenance@CADAVentures.com', 'CADAVenturs');
+//Set an alternative reply-to address
+$ToCada->addReplyTo('cadaventuresmaintenance@gmail.com');
+//Set who the message is to be sent to
+$ToCada->addAddress("cadaventuresmaintenance@gmail.com");
+//Set the subject line
+$ToCada->Subject = 'Maintenance: '. $sub;
+$ToCada->Body = "New request for maintence.";
+$ToCada->AltBody = $info;
+//Attach an pdf file
+$ToCada->addAttachment($path);
+//send the message, check for errors
+if (!$ToCada->send()) {
+    echo "Mailer Error: " . $mail->ErrorInfo;
+} else {
+    echo "Message sent!";
+}
+
+
 if(unlink($path)) echo "File Deleted";
 header("Location: index.php");
 exit;
