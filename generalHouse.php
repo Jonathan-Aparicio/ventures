@@ -52,7 +52,7 @@
             break;
           }else{
             echo "<div class=\"col-sm-4\">
-              <img class=\"img-fluid\" src=\"" . $pics[$z]['image'] . " \" data-toggle=\"modal\" data-target=\"#exampleModal\" data-whatever=\"" . $pics[$z]['image'] . "\">
+              <img id=\"extra-img\"class=\"img-fluid\" src=\"" . $pics[$z]['image'] . " \" data-toggle=\"modal\" data-target=\"#exampleModal\" data-whatever=\"" . $pics[$z]['image'] . "\">
             </div>";
             $z++;
           }
