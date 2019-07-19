@@ -38,25 +38,14 @@
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
         <?php
-              // for($y = 0; $y < sizeof($pics); $y++){
-              //     echo "<div class=\"item\">
-              //             <img src=\"".$pics[$y]['MainPhoto']."\"  style=\"width:100%; height:50%\">
-              //           </div>";
-              // }
+              for($y = 0; $y < sizeof($pics); $y++){
+                  echo "<div class=\"item\">
+                          <img src=\"".$pics[$y]['MainPhoto']."\"  style=\"width:100%; height:50%\">
+                        </div>";
+              }
 
         ?>
 
-        <div class="item active">
-          <img src="bage-house.jpg" alt="Los Angeles" style="width:100%; height:50%">
-        </div>
-
-        <div class="item">
-          <img src="white-house.jpg" alt="Chicago" style="width:100%; height:50%">
-        </div>
-
-        <div class="item">
-          <img src="blue-house.jpg" alt="New york" style="width:100%; height:50%">
-        </div>
       </div>
 
       <!-- Left and right controls -->
