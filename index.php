@@ -39,11 +39,11 @@
       <div class="carousel-inner">
         <?php
               for($y = 0; $y < sizeof($pics); $y++){
-                  echo "<div class=\"item active\">
+                  echo "<div class=\"item\">
                           <img src=\"".$pics[$y]."\"  style=\"width:100%; height:50%\">
                         </div>";
               }
-          
+
         ?>
 
         <!-- <div class="item active">

@@ -92,22 +92,6 @@ class Dao {
     return $stmt->fetchALL();
   }
 
-  // public function updateMain($id, $data){
-  //     $blob = fopen($data, 'rb');
-  //     echo"in dao";
-  //     echo $blob;
-  //      $conn = $this->getConnection();
-  //      $saveQuery =
-  //            "UPDATE Houses
-  //            set MainPhoto = :data
-  //            WHERE
-  //            ID = :type";
-  //            $q = $conn->prepare($saveQuery);
-  //             $q->bindParam(":id", $id);
-  //             $q->bindParam(":data", $blob, PDO::PARAM_LOB);
-  //             $q->execute();
-  //       fclose($blob);
-  // }
 
   public function getMainHousePhotos($type){
     $conn = $this->getConnection();
@@ -123,7 +107,7 @@ class Dao {
     $stmt = $conn->prepare("SELECT MainPhoto FROM Houses");
     $stmt->setFetchMode(PDO::FETCH_ASSOC);
     $stmt->execute();
-    return $stmt->fetchALL();
+    return $stmt->fetch();
   }
 
   // public function getAllHouseInfo($id, $type){
