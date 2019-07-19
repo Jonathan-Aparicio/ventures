@@ -107,7 +107,7 @@ class Dao {
     $stmt = $conn->prepare("SELECT MainPhoto FROM Houses");
     $stmt->setFetchMode(PDO::FETCH_ASSOC);
     $stmt->execute();
-    return $stmt->fetch();
+    return $stmt->fetchALL();
   }
 
   // public function getAllHouseInfo($id, $type){
