@@ -40,7 +40,7 @@
         <?php
               for($y = 0; $y < sizeof($pics); $y++){
                   echo "<div class=\"item\">
-                          <img src=\"".$pics[$y]['MainPhoto']."\"  style=\"width:100%; height:50%\">
+                          <img src=\"".$pics[$y]['MainPhoto']."\"  class=\"d-block w-100\">
                         </div>";
               }
 
