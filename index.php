@@ -40,7 +40,7 @@
         <?php
               for($y = 0; $y < sizeof($pics); $y++){
                   echo "<div class=\"carousel-item\">
-                          <img src=\"".$pics[$y]['MainPhoto']."\"  class=\"d-block w-100\">
+                          <img src=\"".$pics[$y]['MainPhoto']."\"  class=\"d-block w-100 h-50\">
                         </div>";
               }
 
