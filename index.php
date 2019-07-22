@@ -7,7 +7,9 @@
   ?>
 </div>
 <body class="d-flex flex-column h-100">
+  <div><img src="images/frontpage.jpg"></div>
   <div class="container">
+
     <div class="jumbotron">
   <!-- <h1>Bootstrap Tutorial</h1> -->
   <p class="text-center">Welcome to CADAVentures rentals curently this website is a school project. All pictures being used are stock photos
