@@ -14,15 +14,8 @@
     </p>
 </div>
 
-
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <!-- <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol> -->
-
+<div class="row justify-content-start">
+    <div id="myCarousel" class="carousel slide w-75" data-ride="carousel">
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
         <?php
@@ -34,11 +27,8 @@
                           <img src=\"".$pics[$y]['MainPhoto']."\"  class=\"d-block w-100 h-50\">
                         </div>";
               }
-
         ?>
-
       </div>
-
       <!-- Left and right controls -->
       <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -50,6 +40,7 @@
         </a>
     </div>
   </div>
+</div>
 
 
 
