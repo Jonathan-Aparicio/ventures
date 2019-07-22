@@ -15,6 +15,7 @@
 </div>
 
 <div class="row justify-content-start">
+  <div class="col-sm-12">
     <div id="myCarousel" class="carousel slide w-75" data-ride="carousel">
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
@@ -40,6 +41,7 @@
         </a>
     </div>
   </div>
+</div>
 </div>
 
 
