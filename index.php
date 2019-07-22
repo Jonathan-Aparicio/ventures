@@ -62,19 +62,6 @@
 
 
 
-<!-- <div class="container">
-  <div class="row">
-    <div class="col-sm-4">
-      <img class="img-responsive" src="bage-house.jpg">
-      bage house
-    </div>
-    <div class="col-sm-4">
-      <img class="img-responsive" src="white-house.jpg">
-    </div>
-    <div class="col-sm-4">
-      <img class="img-responsive" src="blue-house.jpg">
-    </div> -->
-
       <?php require_once "footer.php";?>
 
   </body>
