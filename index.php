@@ -9,7 +9,7 @@
 <body class="d-flex flex-column h-100">
   <div class="bi">
     <h4>CADAVenturs</h4>
-    <!-- <img src="images/frontpage.jpg"> -->
+    <img src="images/logo.png">
   </div>
   <div class="container">
 
