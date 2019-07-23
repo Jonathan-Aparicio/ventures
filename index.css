@@ -19,3 +19,7 @@ body{
 #extra-img:hover{
   opacity: .5;
 }
+
+.bc{
+  background-image: url('images/frontpage.jpg');
+}

@@ -7,7 +7,9 @@
   ?>
 </div>
 <body class="d-flex flex-column h-100">
-  <div><img src="images/frontpage.jpg"></div>
+  <div class="bi">
+    <!-- <img src="images/frontpage.jpg"> -->
+  </div>
   <div class="container">
 
     <div class="jumbotron">
