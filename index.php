@@ -14,8 +14,12 @@
   </div> -->
   <div class="container">
 
-    <div class="bi">
-      <img src="images/logo.png">
+    <div class="row justify-content-center">
+      <div class="col-sm-12">
+        <div class="bi">
+          <img src="images/logo.png">
+        </div>
+      </div>
     </div>
 
     <div class="jumbotron">
