@@ -17,7 +17,7 @@
     <div class="row justify-content-center">
       <div class="col-sm-12">
         <div class="bi">
-          <img src="images/logo.png">
+          <img src="images/logo.png" class="mx-auto d-block">
         </div>
       </div>
     </div>
