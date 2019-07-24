@@ -7,11 +7,8 @@
   ?>
 </div>
 <body class="d-flex flex-column h-100">
+  <div class="frontPage">
 
-  <!-- <div class="bi">
-    <h4>CADAVenturs</h4>
-    <img src="images/logo.png">
-  </div> -->
   <div class="container">
 
     <div class="row justify-content-center">
@@ -61,5 +58,5 @@
 
 
       <?php require_once "footer.php";?>
-
+    </div>
   </body>

@@ -1,7 +1,5 @@
 body{
   background-color:#dcdfe5;
-  background-image: url("images/frontpage.jpg");
-  background-size: 100% 100%;
 }
 
 .info{
@@ -22,8 +20,9 @@ body{
   opacity: .5;
 }
 
-.bi{
-
+.frontPage{
+  background-image: url("images/frontpage.jpg");
+  background-size: 100% 100%;
 }
 
 .jumbotron{
