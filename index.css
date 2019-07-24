@@ -28,4 +28,7 @@ body{
 
 .jumbotron{
   background-color: transparent;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: large;
 }
