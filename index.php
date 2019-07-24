@@ -7,11 +7,16 @@
   ?>
 </div>
 <body class="d-flex flex-column h-100">
-  <div class="bi">
+
+  <!-- <div class="bi">
     <h4>CADAVenturs</h4>
     <img src="images/logo.png">
-  </div>
+  </div> -->
   <div class="container">
+
+    <div class="bi">
+      <img src="images/logo.png">
+    </div>
 
     <div class="jumbotron">
   <!-- <h1>Bootstrap Tutorial</h1> -->
