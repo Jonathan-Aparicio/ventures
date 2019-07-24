@@ -28,7 +28,7 @@
     </p>
 </div>
 
-<div class="row justify-content-center">
+<div class="row justify-content-center frontCar">
   <div class="col-sm-10">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Wrapper for slides -->
