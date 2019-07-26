@@ -31,6 +31,14 @@ insert into Houses
 	insert into Houses
 	(ID,  StreetAddress, City, State ,MainPhoto, HouseTypeID ,PhotoID, Description)
     values(5, '1354 main st', 'boise', 'id' , 'images\\com\\downtown\\downtown-storefront.jpg', 'com', 5, 'store font ');
+    
+    insert into Houses
+	(ID,  StreetAddress, City, State ,MainPhoto, HouseTypeID ,PhotoID, Description)
+    values(6, '1654 highway 53', 'boise', 'id' , 'images\\ind\\storageUnit\\storageFront.jpg', 'ind', 6, 'storage unit ');
+    
+    insert into Houses
+	(ID,  StreetAddress, City, State ,MainPhoto, HouseTypeID ,PhotoID, Description)
+    values(7, '1646 highway 53', 'boise', 'id' , 'images\\ind\\warehosue\\warehouse.jpg', 'ind', 7, 'warehouse ');
 
 insert into Images
 	(ID, image)
@@ -100,5 +108,12 @@ insert into Images
 	(ID, image)
     values(4,'images\\res\\mondern\\MH-pool.jpg');
     
+    insert into Images
+	(ID, image)
+    values(7,'images\\ind\\warehosue\\WH-inside.jpg');
+    
+    insert into Images
+	(ID, image)
+    values(7,'images\\ind\\warehosue\\WH-office.jpg');
     
     
