@@ -14,12 +14,12 @@
   </div>
 
   <div class="container">
-      <?php if($user['Renting'] != NULL): $address = $dao->getInfo((int)$user['Renting']);?>
       <div class="row justify-content-start">
         <div class="col-sm-4">
           <h4>Payment</h4>
         </div>
       </div>
+      <?php if($user['Renting'] != NULL): $address = $dao->getInfo((int)$user['Renting']);?>
       <div class="row align-items-center justify-content-center">
 
       </div>
