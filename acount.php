@@ -1,18 +1,15 @@
-<?php
-  require_once "DAO.php";
-  $dao = new Dao();
-  $user;
-  if (!isset($_SESSION["access_granted"]) && !$_SESSION["access_granted"]) {
-    header("Location:index.php");
-  }else{
-    $user = $dao->getUser(@$_SESSION['email']);
-  }
- ?>
 <body class="d-flex flex-column h-100">
-  <div>
-    <?php require_once "nav-bar.php";?>
-  </div>
-
+  <?php
+    require_once "nav-bar.php";
+    require_once "DAO.php";
+    $dao = new Dao();
+    $user;
+    if (!isset($_SESSION["access_granted"]) && !$_SESSION["access_granted"]) {
+      header("Location:index.php");
+    }else{
+      $user = $dao->getUser(@$_SESSION['email']);
+    }
+   ?>
   <div class="container">
       <div class="row justify-content-start">
         <div class="col-sm-4">

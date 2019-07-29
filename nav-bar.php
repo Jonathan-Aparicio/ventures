@@ -37,11 +37,11 @@
         <?php if (isset($_SESSION["access_granted"]) && $_SESSION["access_granted"]) :
           echo "<a class=\"dropdown-item\" href=\"Maintenance.php\">Maintenance</a>
           <a class=\"dropdown-item\" href=\"#\">Pay Online</a>
-          <a class=\"dropdown-item\" href=\"acount.php\">Acount</a>";
+          <a class=\"dropdown-item\" href=\"acount.php\">Account</a>";
          else:
           echo "<a class=\"dropdown-item\" href=\"log-in.php\">Maintenance</a>
           <a class=\"dropdown-item\" href=\"log-in.php\">Pay Online</a>
-          <a class=\"dropdown-item\" href=\"log-in.php\">Acount</a>";
+          <a class=\"dropdown-item\" href=\"log-in.php\">Account</a>";
          endif; ?>
       </div>
     </li>
