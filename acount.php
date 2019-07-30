@@ -11,6 +11,7 @@
     }
    ?>
   <div class="container">
+    <div class="payment_box">
       <div class="row justify-content-start">
         <div class="col-sm-4">
           <h4>Payment</h4>
@@ -27,6 +28,7 @@
       </div>
     <?php endif; ?>
   </div>
+</div>
 
   <?php require_once "footer.php";?>
 </body>
