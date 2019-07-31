@@ -17,13 +17,15 @@
         <?php if($user['Renting'] != NULL): $address = $dao->getInfo((int)$user['Renting']);?>
         <div class="row align-items-center justify-content-center">
           <div class="col-sm-4">
-              <?php echo date("m/d/y", strtotime(date('m', strtotime('+1 month')).'/01/'.date('Y').' 00:00:00'));;?>
+              <p> Next Payment due:<br>
+              <?php echo date("m/d/y", strtotime(date('m', strtotime('+1 month')).'/01/'.date('Y').' 00:00:00'));?></p>
           </div>
           <div class="col-sm-4">
-            <h4>Payment</h4>
+            <p>Make Online Payment:</p><br>
+            <button href="#">Pay Online</button>
           </div>
           <div class="col-sm-4">
-            <h4>Payment</h4>
+            <p>Amount due per month:</p>
           </div>
         </div>
       <?php else: ?>
