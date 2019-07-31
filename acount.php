@@ -17,7 +17,17 @@
         <h1 class="display-4">Payment</h1>
         <?php if($user['Renting'] != NULL): $address = $dao->getInfo((int)$user['Renting']);?>
         <div class="row align-items-center justify-content-center">
-
+          <div class="col-sm-4">
+              <?php $date = date("m-d-y");
+                    $date->modify('first day of +1 month');
+                    echo $date;?>
+          </div>
+          <div class="col-sm-4">
+            <h4>Payment</h4>
+          </div>
+          <div class="col-sm-4">
+            <h4>Payment</h4>
+          </div>
         </div>
       <?php else: ?>
         <div class="row align-items-center justify-content-center">
