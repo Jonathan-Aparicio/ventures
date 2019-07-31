@@ -15,16 +15,16 @@
     <div class="jumbotron jumbotron-fluid">
         <h1 class="display-4">Payment</h1>
         <?php if($user['Renting'] != NULL): $address = $dao->getInfo((int)$user['Renting']);?>
-        <div class="row align-items-center justify-content-center">
-          <div class="col-sm-4">
+        <div class="row justify-content-center">
+          <div class="col-sm-4" align="center">
               <p> Next Payment due:<br>
               <?php echo date("m/d/y", strtotime(date('m', strtotime('+1 month')).'/01/'.date('Y').' 00:00:00'));?></p>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-4" align="center">
             <p>Make Online Payment:</p><br>
             <button href="#">Pay Online</button>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-4" align="center">
             <p>Amount due per month:</p>
           </div>
         </div>
