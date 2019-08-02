@@ -26,8 +26,8 @@
             <button href="#">Pay Online</button>
           </div>
           <div class="col-sm-4" align="center">
-            <p>Amount due per month:</p><br>
-            <h2>$<?php echo $user['Rent'];?><h2>
+            <p>Amount due per month:</p>
+            <h2>$<?php echo $user['Rent'];?>/month<h2>
           </div>
         </div>
       <?php else: ?>
