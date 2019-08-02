@@ -1,4 +1,4 @@
-<body class="d-flex flex-column h-100">
+<!-- <body class="d-flex flex-column h-100"> -->
   <?php
     require_once "nav-bar.php";
     require_once "DAO.php";
@@ -10,6 +10,7 @@
       $user = $dao->getUser(@$_SESSION['email']);
     }
    ?>
+<body class="d-flex flex-column h-100">
   <div class="container">
     <!-- <div class="payment_box"> -->
     <div class="jumbotron jumbotron-fluid payment_box">
