@@ -18,7 +18,7 @@
         <div class="row justify-content-center ">
           <div class="col-sm-4" align="center">
               <p> Next Payment due:<br>
-              <?php echo date("m/d/y", strtotime(date('m', strtotime('+1 month')).'/01/'.date('Y').' 00:00:00'));?></p>
+              <h2><?php echo date("m/d/y", strtotime(date('m', strtotime('+1 month')).'/01/'.date('Y').' 00:00:00'));?><h2></p>
           </div>
           <div class="col-sm-4" align="center">
             <p>Make Online Payment:</p>
@@ -26,7 +26,7 @@
           </div>
           <div class="col-sm-4" align="center">
             <p>Amount due per month:</p><br>
-            <?php echo $user['Rent'];?>
+            <h2>$<?php echo $user['Rent'];?><h2>
           </div>
         </div>
       <?php else: ?>
