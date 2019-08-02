@@ -26,7 +26,7 @@
           </div>
           <div class="col-sm-4" align="center">
             <p>Amount due per month:</p><br>
-            <?php echo $user['Rent']);?>
+            <?php echo $user['Rent'];?>
           </div>
         </div>
       <?php else: ?>
