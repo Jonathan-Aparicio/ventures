@@ -14,7 +14,7 @@
     <!-- <div class="payment_box"> -->
     <div class="jumbotron jumbotron-fluid payment_box">
         <h1 class="display-4">Payment</h1>
-        <?php if($user['Renting'] != NULL): $address = $dao->getInfo((int)$user['Renting']);?>
+        <?php if($user['Renting'] != NULL):;?>
         <div class="row justify-content-center ">
           <div class="col-sm-4" align="center">
               <p> Next Payment due:<br>
@@ -26,7 +26,7 @@
           </div>
           <div class="col-sm-4" align="center">
             <p>Amount due per month:</p><br>
-            <?php echo $dao->getInfo((int)$user['Rent']);?>
+            <?php echo $user['Rent']);?>
           </div>
         </div>
       <?php else: ?>
