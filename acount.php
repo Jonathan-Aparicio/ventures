@@ -14,7 +14,7 @@
   <div class="container">
     <!-- <div class="payment_box"> -->
     <div class="jumbotron jumbotron-fluid payment_box">
-        <h1 class="display-4">Payment</h1>
+        <h1 class="display-4 title">Payment</h1>
         <?php if($user['Renting'] != NULL):;?>
         <div class="row justify-content-center ">
           <div class="col-sm-4" align="center">
