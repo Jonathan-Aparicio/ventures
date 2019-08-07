@@ -36,7 +36,7 @@
           email you have signed your lease with and we shall update your acount.</p>
         </div>
       <?php endif; ?>
-
+    </div>
       <?php if($user['Renting'] != NULL): $address = $dao->getInfo((int)$user['Renting']);?>
       <div class="row justify-content-center ">
         <div class="col-sm-6 housing-box" align="center">
@@ -52,7 +52,6 @@
         email you have signed your lease with and we shall update your acount.</p>
       </div>
     <?php endif; ?>
-    </div>
   </div>
 
 
