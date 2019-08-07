@@ -39,13 +39,20 @@
     </div>
       <?php if($user['Renting'] != NULL): $address = $dao->getInfo((int)$user['Renting']);?>
       <div class="row justify-content-center ">
-        <div class="col-sm-6 housing-box" align="center">
-          <h1 class="display-4 title">Housing Information</h1>
+        <div class="col-sm-6 housing_box" align="center">
+          <h1 class="display-4 title" align="start">Housing Information</h1>
             <p> Address:<br>
             <h2><?php echo $address[0]['StreetAddress'] . " " . $address[0]['City']
             . " " . $address[0]['State'];?><h2></p>
         </div>
       </div>
+      <div class="col-sm-6 housing_box" align="center">
+        <h1 class="display-4 title" align="start">Housing Information</h1>
+          <p> Address:<br>
+          <h2><?php echo $address[0]['StreetAddress'] . " " . $address[0]['City']
+          . " " . $address[0]['State'];?><h2></p>
+      </div>
+    </div>
     <?php else: ?>
       <div class="row align-items-center justify-content-center">
         <p class="text-center">You are curently not renting a property. If this is incorect please email cadaventuresmaintenance@gmail.com with the
