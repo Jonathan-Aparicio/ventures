@@ -45,7 +45,7 @@
             <h2><?php echo $address[0]['StreetAddress'] . " " . $address[0]['City']
             . " " . $address[0]['State'];?><h2></p>
         </div>
-      </div>
+
       <div class="col-sm-6 housing_box" align="center">
         <h1 class="display-4 title" align="start">Housing Information</h1>
           <p> Address:<br>
