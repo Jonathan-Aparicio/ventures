@@ -13,7 +13,7 @@
 <body class="d-flex flex-column h-100">
   <div class="container">
     <!-- <div class="payment_box"> -->
-    <div class="jumbotron jumbotron-fluid payment_box">
+    <div class="jumbotron  payment_box">
         <?php if($user['Renting'] != NULL):;?>
         <h1 class="display-4 title">Payment</h1>
         <div class="row justify-content-center ">
@@ -37,9 +37,9 @@
         </div>
       <?php endif; ?>
     </div>
-    <div class="jumbotron jumbotron-fluid payment_box">
-        <h1 class="display-4 title">Rental Information</h1>
-        <?php if($user['Renting'] != NULL): $address = $dao->getInfo((int)$user['Renting']);;?>
+    <?php if($user['Renting'] != NULL): $address = $dao->getInfo((int)$user['Renting']);;?>
+    <div class="jumbotron  payment_box">
+      <h1 class="display-4 title">Rental Information</h1>
         <div class="row justify-content-center ">
           <div class="col-sm-4" align="center">
             <p> Address:<br>
@@ -48,16 +48,12 @@
           </div>
           <div class="col-sm-4" align="center">
             <p>Lease Time Period:</p>
-            <h2><?php echo $address[0]['LeaseStart'] . " to " . $address[0]['LeaseEnd']
-            . " " . $address[0]['State'];?><h2></p>
-          </div>
-          <div class="col-sm-4" align="center">
-            <p>Amount due per month:</p>
-            <h2>$<?php echo $user['Rent'];?>/month<h2>
+            <h2><?php echo $user['LeaseStart'] . " to " . $user['LeaseEnd'];?><h2></p>
           </div>
         </div>
-      <?php endif; ?>
     </div>
+    <?php endif; ?>
+
 
 
   <?php require_once "footer.php";?>
