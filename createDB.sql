@@ -26,6 +26,8 @@ CREATE TABLE User(
 	Password VARCHAR(64) NOT NULL,
     Renting int null,
     Rent int default 0,
+    LeaseStart date null,
+    LeaseEnd date null,
 	Access bit NOT NULL DEFAULT 0,
      PRIMARY KEY (Email)
      );

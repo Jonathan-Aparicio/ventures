@@ -14,8 +14,8 @@
   <div class="container">
     <!-- <div class="payment_box"> -->
     <div class="jumbotron jumbotron-fluid payment_box">
-        <h1 class="display-4 title">Payment</h1>
         <?php if($user['Renting'] != NULL):;?>
+        <h1 class="display-4 title">Payment</h1>
         <div class="row justify-content-center ">
           <div class="col-sm-4" align="center">
               <p> Next Payment due:<br>
@@ -37,29 +37,27 @@
         </div>
       <?php endif; ?>
     </div>
-      <?php if($user['Renting'] != NULL): $address = $dao->getInfo((int)$user['Renting']);?>
-      <div class="row justify-content-center ">
-        <div class="col-sm-6 housing_box" align="center">
-          <h1 class="display-4 title" align="start">Housing Information</h1>
+    <div class="jumbotron jumbotron-fluid payment_box">
+        <h1 class="display-4 title">Rental Information</h1>
+        <?php if($user['Renting'] != NULL): $address = $dao->getInfo((int)$user['Renting']);;?>
+        <div class="row justify-content-center ">
+          <div class="col-sm-4" align="center">
             <p> Address:<br>
             <h2><?php echo $address[0]['StreetAddress'] . " " . $address[0]['City']
             . " " . $address[0]['State'];?><h2></p>
+          </div>
+          <div class="col-sm-4" align="center">
+            <p>Lease Time Period:</p>
+            <h2><?php echo $address[0]['LeaseStart'] . " to " . $address[0]['LeaseEnd']
+            . " " . $address[0]['State'];?><h2></p>
+          </div>
+          <div class="col-sm-4" align="center">
+            <p>Amount due per month:</p>
+            <h2>$<?php echo $user['Rent'];?>/month<h2>
+          </div>
         </div>
-
-      <div class="col-sm-6 housing_box" align="center">
-        <h1 class="display-4 title" align="start">Housing Information</h1>
-          <p> Address:<br>
-          <h2><?php echo $address[0]['StreetAddress'] . " " . $address[0]['City']
-          . " " . $address[0]['State'];?><h2></p>
-      </div>
+      <?php endif; ?>
     </div>
-    <?php else: ?>
-      <div class="row align-items-center justify-content-center">
-        <p class="text-center">You are curently not renting a property. If this is incorect please email cadaventuresmaintenance@gmail.com with the
-        email you have signed your lease with and we shall update your acount.</p>
-      </div>
-    <?php endif; ?>
-  </div>
 
 
   <?php require_once "footer.php";?>
