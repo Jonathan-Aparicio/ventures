@@ -46,7 +46,7 @@
             <h2><?php echo $address[0]['StreetAddress'] . " " . $address[0]['City']
             . " " . $address[0]['State'];?><h2></p>
           </div>
-          <div class="col-sm-4" align="center">
+          <div class="col-sm-6" align="center">
             <p>Lease Time Period:</p>
             <h2><?php echo $user['LeaseStart'] . " to " . $user['LeaseEnd'];?><h2></p>
           </div>
