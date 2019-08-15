@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="index.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <!-- <link rel="shortcut icon" type="image/ico" href="favicon.ico"/> -->
-  <link rel="icon" href="fav.png" type="image/png" sizes="48x48">
+  <link rel="shortcut icon" type="image/ico" href="favicon.ico"/>
 </head>
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
