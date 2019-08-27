@@ -9,7 +9,6 @@
       <div class="col-sm-4">
         <p class="text-center">Email:</p>
         <p class="text-center">cadaventuresmaintenance@gmail.com</p>
-        <p class="text-center">Jonathan Aparicio<br>jonathandaparicio@gmail.com</p>
       </div>
       <div class="col-sm-4">
         <p class="text-center">@Jonathan Aparicio</p>
