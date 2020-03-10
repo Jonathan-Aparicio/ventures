@@ -25,24 +25,24 @@
     </p>
 </div>
 
-<div class="row justify-content-center frontCar">
+<!-- <div class="row justify-content-center frontCar">
   <div class="col-sm-10">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel"> -->
       <!-- Wrapper for slides -->
-      <div class="carousel-inner">
+      <!-- <div class="carousel-inner"> -->
         <?php
-              echo "<div class=\"carousel-item active\">
-                      <img src=\"".$pics[0]['MainPhoto']."\"  class=\"d-block w-100 h-50\">
-                    </div>";
-              for($y = 1; $y < sizeof($pics); $y++){
-                  echo "<div class=\"carousel-item\">
-                          <img src=\"".$pics[$y]['MainPhoto']."\"  class=\"d-block w-100 h-50\">
-                        </div>";
-              }
+              // echo "<div class=\"carousel-item active\">
+              //         <img src=\"".$pics[0]['MainPhoto']."\"  class=\"d-block w-100 h-50\">
+              //       </div>";
+              // for($y = 1; $y < sizeof($pics); $y++){
+              //     echo "<div class=\"carousel-item\">
+              //             <img src=\"".$pics[$y]['MainPhoto']."\"  class=\"d-block w-100 h-50\">
+              //           </div>";
+              // }
         ?>
-      </div>
+      <!-- </div> -->
       <!-- Left and right controls -->
-      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+      <!-- <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
@@ -52,7 +52,7 @@
         </a>
     </div>
   </div>
-</div>
+</div> -->
 </div>
 
 
