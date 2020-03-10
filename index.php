@@ -7,7 +7,7 @@
   ?>
 </div>
 <body class="d-flex flex-column h-100">
-  <div class="frontPage">
+  <div class="frontPage h-100">
 
   <div class="container">
 
